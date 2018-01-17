@@ -2,8 +2,23 @@
 SuperNoder is a python tool that enables increasing understable knowledge of networks by means of collapsing of frequent motifs.
 It requires python 2.7 to be used.
 
-# Example of use in default mode:
-python main.py
+# Example of use:
+Default mode: python main.py
+
+Others:
+
+python main.py -e my_edges.txt -n my_nodes.txt -s 3 -l 1 -m h1 -t 20
+
+python main.py -e my_edges.txt -n my_nodes.txt -s 3 -l 1 -m h1 -t 20 -w path/
+
+python main.py -e my_edges.txt -n my_nodes.txt -s 4 -l 1 -m h1 -t 20 -w path/ -l 5
+
+python main.py -e my_edges.txt -n my_nodes.txt -s 3 -l 1 -m h2 -t 20 -w path/ -s 50
+
+python main.py -e my_edges.txt -n my_nodes.txt -s 3 -l 1 -m h5 -t 20 -w path/ -s 50
+
+python main.py -e my_edges.txt -n my_nodes.txt -s 3 -l 1 -m h1 -t 20 -w path/ -r 10
+
 
 # Parameters:
 '-h', '--help': print the list of parameters
