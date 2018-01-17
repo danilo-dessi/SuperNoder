@@ -263,39 +263,6 @@ def isomorphism_directed(g1, g2):
 	matcher = iso.DiGraphMatcher(g1, g2, node_match = node_equals)
 	return matcher.is_isomorphic()
 	
-	
-	
-#This function computes the adiacency matrix of a motif. It puts a 0 if there is not an edge between two nodes, 1 otherwise.
-#The adiacency matrix is represented by a binary string.
-#Input:
-#	motif: the list of nodes of the motif	
-#	motif_edges: the list of edges of the motif
-#Output:
-#	the string that represents the adiacency matrix
-#def get_motif_type(motif, motif_edges):
-#	motif_type = ""
-#	nodes = ast.literal_eval(motif)
-#	for i in range(0, len(nodes)):
-#		for j in range (0, len(nodes)):
-#			if (nodes[i], nodes[j]) in motif_edges or (nodes[j], nodes[i]) in motif_edges:
-#				motif_type += "1"
-#			else:
-#				motif_type += "0"
-#	return motif_type
-
-
-#This function is used to computes the type for each motif
-#Input:
-#	motifs: the list of all motifs
-#	motifs_edges: a dictionary where the key is the motif and the value is the list of it edges
-#Output:
-#	types: the dictionary where the key is the motif and the value is the string of its adiacency matrix
-#
-#def get_motifs_type(motifs, motifs_edges):
-#	types = {}
-#	for motif in motifs:
-#		types[motif] = get_motif_type(ast.literal_eval(motif), motifs_edges[motif])
-#	return types
 		
 
 #This function remove all self edges that are present into a list	

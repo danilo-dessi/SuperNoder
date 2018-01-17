@@ -152,7 +152,6 @@ def controller():
 				supernodes  = h5(motifs, samples_size)
 				print "Supernodes: ",len(supernodes),  " time: " ,str(time.time() - start_time)
 			
-			print find_overlaps(supernodes)
 			#reduction of the network
 			nodes_dict_original = dict(nodes_dict)
 			nodes_dict_reduction, edge_list_reduction = reduction(supernodes, nodes_dict, g)
