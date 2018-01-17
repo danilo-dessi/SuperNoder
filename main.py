@@ -15,10 +15,8 @@ def controller():
 	n_arguments = len(sys.argv)
 	list_of_arguments  = sys.argv
 
-	graphfile = 'net.txt'			#default file name that contans the edges
+	graphfile = 'edges.txt'			#default file name that contans the edges
 	nodes = 'nodes.txt'				#default file name of the file that contains the nodes
-	#outputfile = 'out.txt'			#default file name of the file with
-	#networkfile = "net_net.txt"
 	motif_size = '3'				#default motif size
 	workspace = './'				#default workspace is the directory where the program is executed
 	undirect = True					#this paramenter indicates if the network is directed or not. It is necessary when mfinder software is adopted
@@ -27,16 +25,12 @@ def controller():
 	edges_list = []					#this variable is a list of pairs, where each pair is and edge and contains the ids of nodes
 	motifs = []						#this variable contains the list of all computed motifs
 	supernodes_edges = {}			#this disctionary contains for each motif the list of edges between its nodes
-	#frequency = []					#frequency is a variable that is adopted to count how many times a motif occurs
 	sets_of_isomorphic_supernodes = {} #this variable contains lists where into each list, each supernode is isomorphic to others.
 	threshold = 1					#threshold indicates the times that a motif must occur to be kept and transformed in a supernodes
 	number_levels = 1				#this indicates the number of hierarchical levels the code has to be performed on temporary results
-	#greedy = False					#this variable is a flag that can be activated by the user. When its value is True it splits the original graph into subgraphs to make faster the motifs computation
-	#greedy_size = 100				#this variable indicate the size of subgraphs in case greedy == True. It can be also set by the user
-	#greedy_split_times = 10		# this variable indicates the times that the greedy approach will be performed to compute possible subgraphs
 	repetition_times = 5			#this variable indicates how many times the iset greedy will be applied on the set of motifs
 	motifset = set()
-	samples_size = 1000
+	samples_size = 100
 		
 	#management of user's parameter
 	try:	
@@ -44,11 +38,9 @@ def controller():
 			
 		for opt, arg in opts:
 			if opt == '-h':
-				print 'motif_discovery.py -e <edgefile> -n <nodes> -s <size-of-motifs> [-o <outputfile>] [-d, --direct] [-w <workspace>] [-m, --mode] [-t, --threshold] [-l <--levels>] [-g, --greedy-split-size] [-j, --greedy-split-times] [-k, --greedy-iset-times]'
+				print 'main.py [-e <edgefile>] [-n <nodes>] [-s <size-of-motifs>] [-d, --direct] [-w <workspace>] [-m, --mode] [-t, --threshold] [-l <--levels>] [-k, --samples-size] [-r,--repetition-times]'
 			elif opt in ("-e", "--efile"):
 				graphfile = arg
-			elif opt in ("-o", "--ofile"):
-				outputfile = arg
 			elif opt in ("-s", "--size"):
 				motif_size = arg
 			elif opt in ("-d", "--direct"):
@@ -72,7 +64,7 @@ def controller():
 				samples_size = int(arg)	
 		
 	except getopt.GetoptError:
-		print 'motif_discovery.py -e <edgefile> -n <nodes> -s <size-of-motifs> [-o <outputfile>] [-d, --direct] [-w <workspace>] [-m, --mode] [-t, --threshold] [-l <--levels>] [-g, --greedy-split-size] [-j, --greedy-split-times] [-k, --greedy-iset-times]'
+		print 'main.py [-e <edgefile>] [-n <nodes>] [-s <size-of-motifs>] [-d, --direct] [-w <workspace>] [-m, --mode] [-t, --threshold] [-l <--levels>] [-k, --samples-size] [-r,--repetition-times]'
 		sys.exit(2)
 	
 	#mode can only take some values to activate the chosen operation-mode
