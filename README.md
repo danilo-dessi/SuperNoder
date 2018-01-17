@@ -42,6 +42,51 @@ python main.py -e my_edges.txt -n my_nodes.txt -s 3 -l 1 -m h1 -t 20 -w path/ -r
 '-r', '--repetition-times' <value>: the number of shufflings that h1 has to use. Default: 5
   
 '-k', '--samples-size' <value>: the size of samples of h2 or h5. Default: 100
+  
+#Format of input file:
+nodes.txt
+
+1 A
+
+2 A
+
+3 B
+
+4 C
+
+5 D
+
+6 B
+
+edges.txt
+
+1 2
+
+1 5
+
+2 4
+
+3 5
+
+4 6
+
+#Output
+Output of the tool is placed in a directory 'output-resources'. The directory contains nodes, edges, list of motifs, and list of supernodes for each level of recursion. Example if l = 2 there will be the following files:
+
+OUT_L1_NODES.txt      -> the list of nodes of the reduce network
+
+OUT_L1_EDGES.txt      -> the list of edges of the reduced network
+
+OUT_L1_MOTIFS.txt     -> the list of all motifs computed on the original network
+
+OUT_L1_SUPERNODES.txt -> the list of motifs collapsed in supernodes. 
+
+
+
+
+
+
+
 
 
 
