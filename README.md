@@ -43,7 +43,7 @@ python main.py -e my_edges.txt -n my_nodes.txt -s 3 -l 1 -m h1 -t 20 -w path/ -r
   
 '-k', '--samples-size' <value>: the size of samples of h2 or h5. Default: 100
   
-#Format of input file:
+# Format of input file:
 nodes.txt
 
 1 A
@@ -70,7 +70,7 @@ edges.txt
 
 4 6
 
-#Output
+# Output
 Output of the tool is placed in a directory 'output-resources'. The directory contains nodes, edges, list of motifs, and list of supernodes for each level of recursion. Example if l = 2 there will be the following files:
 
 OUT_L1_NODES.txt      -> the list of nodes of the reduce network
