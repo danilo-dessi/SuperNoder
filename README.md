@@ -79,16 +79,12 @@ OUT_L1_EDGES.txt      -> the list of edges of the reduced network
 
 OUT_L1_MOTIFS.txt     -> the list of all motifs computed on the original network
 
-OUT_L1_SUPERNODES.txt -> the list of motifs collapsed in supernodes. 
+OUT_L1_SUPERNODES.txt -> the list of motifs collapsed in supernodes.
 
+OUT_L2_NODES.txt
 
+OUT_L2_EDGES.txt
 
+OUT_L2_MOTIFS.txt 
 
-
-
-
-
-
-
-
-
+OUT_L2_SUPERNODES.txt
