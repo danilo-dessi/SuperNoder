@@ -1,5 +1,7 @@
 # SuperNoder
-SuperNoder is a python tool that enables increasing understable knowledge of networks by means of collapsing of frequent motifs.
+This repository contains the SuperNoder resources, the main outcome of the work: SuperNoder: progressive collapsing of networks through the discovery of disjoint motifs.
+
+SuperNoder is a python tool that enables the simplification of networks by means of collapsing of their frequent motifs.
 It requires python 2.7 to be used.
 
 # Example of use:
