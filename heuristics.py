@@ -49,7 +49,6 @@ def h1(motifs):
 				break
 		if n == 0:
 			mis += [motif]
-	
 	return mis
 
 #See reference [8]	

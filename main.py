@@ -117,7 +117,7 @@ def controller():
 				start_time = time.time()
 				supernodes = []
 				for i in range(repetition_times):				
-					tmp_supernodes = h1(g, motifs)
+					tmp_supernodes = h1(motifs)
 					if len(supernodes) < len(tmp_supernodes):
 						supernodes = tmp_supernodes
 				print "Supernodes: ",len(supernodes),  " time: ", str(time.time() - start_time)
