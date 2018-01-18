@@ -35,11 +35,10 @@ def find_overlaps(motifs):
 #Greedy Elimination
 #The function takes the graph and the list of all motifs and returns a list of disjoint motifs
 #Input
-#	g: the graph that represents the networkx
 #	motifs: the list of motifs 
 #Output:
 #	mis: the list of disjoint motifs	
-def h1(g, motifs):
+def h1(motifs):
 	mis = []
 	random.shuffle(motifs)
 	for motif in motifs:
