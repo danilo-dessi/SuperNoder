@@ -1,7 +1,7 @@
 # SuperNoder
 This repository contains the SuperNoder resources, the main outcome of the work: SuperNoder: progressive collapsing of networks through the discovery of disjoint motifs, authored by Danilo Dessì, Jacopo Cirrone, Diego Reforgiato Recupero, and Dennis Shasha.
 
-SuperNoder is a python tool that enables the simplification of networks by means of collapsing of their frequent motifs.
+SuperNoder is a python tool that enables the simplification of networks by means of collapsing of frequent motifs.
 It requires python 2.7 to be used.
 
 For info please contact: danilo_dessi@unica.it
