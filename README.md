@@ -103,7 +103,6 @@ The label L1 and L2 indicate that results refer to the first and second iteratio
 # Test Folder
 The folder 'test' contains our mapping of the yeast network nodes on five levels of the Gene-Ontology terms ontology.
 The original labels of nodes and edges of the network are available in http://vlado.fmf.uni-lj.si/pub/networks/data/bio/yeast/yeast.htm
-Please note that the edges file will have to contain only the list of edges as above explained.
 
 # Requirements
 Supernoder requires the networkx library version 1.11 https://networkx.github.io/documentation/networkx-1.11/
