@@ -99,6 +99,9 @@ The folder 'test' contains our mapping of the yeast network nodes on five levels
 The original labels of nodes and edges of the network are available in http://vlado.fmf.uni-lj.si/pub/networks/data/bio/yeast/yeast.htm
 Please note that the edges file will have to contain only the list of edges as above explained.
 
+# Requirements
+Supernoder requires the networkx library version 1.11 https://networkx.github.io/documentation/networkx-1.11/
+
 # Acknowledgements
 Danilo Dessì gratefully acknowledges Sardinia Regional Government for the financial support of his PhD scholarship (P.O.R. Sardegna F.S.E. 2014-2020 - Axis III Education and training, Priority of investment 10ii, Specific goal 10.5). Danilo Dessì  would also like to extend his thanks to the University of Cagliari for sponsoring his stay at the New York University with a GlobusDoc grant awarded in fall 2017.
 Dennis Shasha and Jacopo Cirrone gratefully acknowledges the U.S. National Science Foundation under grants MCB-1158273 and IOS-1339362.
