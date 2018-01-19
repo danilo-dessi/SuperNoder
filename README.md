@@ -98,7 +98,7 @@ OUT_L2_MOTIFS.txt       ->  the list of all motifs computed on the original netw
 
 OUT_L2_SUPERNODES.txt   ->  the list of motifs collapsed in supernodes after two iterations
 
-The label L1 and L2 indicate that results refer to the first and second iteration respectively
+The label L1 and L2 indicate that results refer to the first and second iteration respectively.
 
 # Test Folder
 The folder 'test' contains our mapping of the yeast network nodes on five levels of the Gene-Ontology terms ontology.
