@@ -1,14 +1,12 @@
 # SuperNoder
-This repository contains the SuperNoder resources, the main outcome of the work: SuperNoder: progressive collapsing of networks through the discovery of disjoint motifs, authored by Danilo Dessì<sup>1</sup>, Jacopo Cirrone<sup>2</sup>, Diego Reforgiato Recupero<sup>1</sup>, and Dennis Shasha<sup>2</sup>.
+This repository contains the SuperNoder resources, the main outcome of the work: SuperNoder: a tool to discover over-represented modular structures in networks.
 
-<sup>1</sup> Department of Mathematics and Computer Science, University of Cagliari, Cagliari, 09124, Italy
-
-<sup>2</sup> Department of Computer Science, Courant Institute of Mathematical Sciences, New York University, New York City, 10012, USA
+Authors: They will be available after publication.
 
 SuperNoder is a python tool that enables the simplification of networks by means of collapsing of frequent motifs.
 It requires python 2.7 to be used.
 
-For info please contact: danilo_dessi@unica.it
+For info please contact: It will be available after publication.
 
 # Example of use:
 Default mode: python main.py
@@ -108,7 +106,6 @@ The original labels of nodes and edges of the network are available in http://vl
 Supernoder requires the networkx library version 1.11 https://networkx.github.io/documentation/networkx-1.11/
 
 # Acknowledgements
-Danilo Dessì gratefully acknowledges Sardinia Regional Government for the financial support of his PhD scholarship (P.O.R. Sardegna F.S.E. 2014-2020 - Axis III Education and training, Priority of investment 10ii, Specific goal 10.5). Danilo Dessì  would also like to extend his thanks to the University of Cagliari for sponsoring his stay at the New York University with a GlobusDoc grant awarded in fall 2017.
-Dennis Shasha and Jacopo Cirrone gratefully acknowledges the U.S. National Science Foundation under grants MCB-1158273 and IOS-1339362.
+They will be available after publication.
 
 
